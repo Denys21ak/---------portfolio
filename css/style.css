@@ -84,7 +84,7 @@ body {
   height: 389px;
   background-color: #b68500;
   border-radius: 50%;
-  background-image: url("/img/IMG_20220904_131955_1\ \(1\).jpg");
+  background-image: url("img/IMG_20220904_131955_1\ \(1\).jpg");
   background-repeat: no-repeat;
   background-position: center top;
   border: 13px solid #fff;
@@ -153,13 +153,13 @@ body {
 }
 .imput-name {
   margin-bottom: 17px;
-  background-image: url(../img/user-icon.svg);
+  background-image: url(img/user-icon.svg);
   background-repeat: no-repeat;
   background-position: center left 20px;
 }
 .imput-phone {
   margin-bottom: 17px;
-  background-image: url(../img/phone-icon.svg);
+  background-image: url(img/phone-icon.svg);
   background-repeat: no-repeat;
   background-position: center left 20px;
 }
