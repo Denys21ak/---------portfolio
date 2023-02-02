@@ -262,4 +262,18 @@ a:active {
     margin-top: 42px;
     flex-basis: 100%;
   }
+  .features-block{
+    flex-direction: column;
+    max-width: 469px;
+    text-align: center;    
+    justify-content: center;
+  }
+  .features-image {
+    margin: 7px auto;
 }
+
+}
+
+
+
+
