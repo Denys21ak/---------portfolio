@@ -305,54 +305,164 @@ a:active {
 
 
   /* phone */
-  .callback-bt {
-    background: #b8ee30;
-    border: 2px solid #190cd8;
-    border-radius: 50%;
-    box-shadow: 0 8px 10px rgb(159 193 73 / 30%);
-    cursor: pointer;
-    height: 68px;
-    text-align: center;
-    width: 68px;
-    position: fixed;
-    right: 4%;
-    bottom: 2%;
-    z-index: 999;
-    transition: .3s;
-    -webkit-animation: hoverWave linear 1s infinite;
-    animation: hoverWave linear 1s infinite;
- }
- .cbtext {
-    position: absolute;
-    top: -60px;
-    font-size: 14px;
-    color: #000;
-    width: 200px;
-    left: -80px;
-    background: rgb(255 255 255 / 80%);
-    border-radius: 4px;
- }
- .callback-bt .text-call {
-    height: 68px;
-    width: 68px;
-    border-radius: 50%;
-    position: relative;
-    overflow: hidden;
- }
- .callback-bt i {
-    color: #fff;
-    font-size: 34px;
-    transition: .3s;
-    line-height: 66px;
-    transition: .5s ease-in-out;
- }
-      @keyframes glowing {
-      0% { background-color: #190cd8; box-shadow: 0 0 5px #190cd8; }
-      50% { background-color: #2f26b2; box-shadow: 0 0 20px #190cd8; }
-      100% { background-color: #190cd8; box-shadow: 0 0 5px #190cd8; }
-      }
-      .callback-bt {
-      animation: glowing 1300ms infinite;
-      }
- 
- 
+/*кнопка звонка*/
+@charset "utf-8";
+
+.callback-bt {
+  background: #38a3fd;
+  border-radius: 50%;
+  box-shadow: 0 8px 10px rgba(56, 163, 253, 0.3);
+  cursor: pointer;
+  border: 2px solid transparent;
+  display: block;
+  height: 75px;
+  width: 75px;
+  text-align: center;
+  position: fixed;
+  right: 8%;
+  bottom: 18%;
+  z-index: 999;
+  transition: .3s ease-in-out;
+  -webkit-animation: hoverWave linear 1s infinite;
+  animation: hoverWave linear 1s infinite;
+}
+
+.callback-bt:hover {
+  background: #fff;
+  border: 2px solid #38a3fd;
+}
+
+.callback-bt .text-call {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.callback-bt .text-call:after {
+  content: "\f095";
+  display: block;
+  font-family: fontawesome;
+  color: #fff;
+  font-size: 38px;
+  line-height: 75px;
+  height: 75px;
+  width: 75px;
+  opacity: 1;
+  transition: .3s ease-in-out;
+  animation: 1200ms ease 0s normal none 1 running shake;
+  animation-iteration-count: infinite;
+}
+
+.callback-bt .text-call:hover:after {
+  opacity: 0;
+}
+
+.callback-bt .text-call span {
+  color: #38a3fd;
+  display: block;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  font-size: 11px;
+  line-height: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: .3s ease-in-out;
+  font-family: 'montserrat', Arial, Helvetica, sans-serif;
+}
+
+.callback-bt .text-call:hover span {
+  opacity: 1;
+}
+
+@keyframes hoverWave {
+  0% {
+      box-shadow: 0 8px 10px rgba(56, 163, 253, 0.3), 0 0 0 0 rgba(56, 163, 253, 0.2), 0 0 0 0 rgba(56, 163, 253, 0.2)
+  }
+
+  40% {
+      box-shadow: 0 8px 10px rgba(56, 163, 253, 0.3), 0 0 0 15px rgba(56, 163, 253, 0.2), 0 0 0 0 rgba(56, 163, 253, 0.2)
+  }
+
+  80% {
+      box-shadow: 0 8px 10px rgba(56, 163, 253, 0.3), 0 0 0 30px rgba(56, 163, 253, 0), 0 0 0 26.7px rgba(56, 163, 253, 0.067)
+  }
+
+  100% {
+      box-shadow: 0 8px 10px rgba(56, 163, 253, 0.3), 0 0 0 30px rgba(56, 163, 253, 0), 0 0 0 40px rgba(56, 163, 253, 0.0)
+  }
+}
+
+/* animations icon */
+
+@keyframes shake {
+  0% {
+      transform: rotateZ(0deg);
+      -ms-transform: rotateZ(0deg);
+      -webkit-transform: rotateZ(0deg);
+  }
+
+  10% {
+      transform: rotateZ(-30deg);
+      -ms-transform: rotateZ(-30deg);
+      -webkit-transform: rotateZ(-30deg);
+  }
+
+  20% {
+      transform: rotateZ(15deg);
+      -ms-transform: rotateZ(15deg);
+      -webkit-transform: rotateZ(15deg);
+  }
+
+  30% {
+      transform: rotateZ(-10deg);
+      -ms-transform: rotateZ(-10deg);
+      -webkit-transform: rotateZ(-10deg);
+  }
+
+  40% {
+      transform: rotateZ(7.5deg);
+      -ms-transform: rotateZ(7.5deg);
+      -webkit-transform: rotateZ(7.5deg);
+  }
+
+  50% {
+      transform: rotateZ(-6deg);
+      -ms-transform: rotateZ(-6deg);
+      -webkit-transform: rotateZ(-6deg);
+  }
+
+  60% {
+      transform: rotateZ(5deg);
+      -ms-transform: rotateZ(5deg);
+      -webkit-transform: rotateZ(5deg);
+  }
+
+  70% {
+      transform: rotateZ(-4.28571deg);
+      -ms-transform: rotateZ(-4.28571deg);
+      -webkit-transform: rotateZ(-4.28571deg);
+  }
+
+  80% {
+      transform: rotateZ(3.75deg);
+      -ms-transform: rotateZ(3.75deg);
+      -webkit-transform: rotateZ(3.75deg);
+  }
+
+  90% {
+      transform: rotateZ(-3.33333deg);
+      -ms-transform: rotateZ(-3.33333deg);
+      -webkit-transform: rotateZ(-3.33333deg);
+  }
+
+  100% {
+      transform: rotateZ(0deg);
+      -ms-transform: rotateZ(0deg);
+      -webkit-transform: rotateZ(0deg);
+  }
+}
+/* конец кнопки звонка */
