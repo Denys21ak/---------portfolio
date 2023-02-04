@@ -147,7 +147,7 @@ body {
   background-color: rgb(0, 0, 0);
 }
 .section {
-  padding-top: 64px;
+  padding-top: 120px;
   padding-bottom: 92px;
 }
 .section-title {
@@ -246,6 +246,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 42px;
+  text-align: left;
 }
 .contacts-phone,
 .contacts-mail {
