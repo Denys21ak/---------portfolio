@@ -245,7 +245,7 @@ body {
 .contacts-data {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
   text-align: left;
 }
 .contacts-phone,
