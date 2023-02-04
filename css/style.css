@@ -21,9 +21,11 @@ body {
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
+  text-shadow: 0 0 108px rgb(255 224 0);
 }
+
 .hero {
-  padding-top: 50px;
+  padding-top: 100px;
   padding-bottom: 155px;
   background: linear-gradient(0.01deg, #000000 0.01%, rgba(0, 0, 0, 0.807) 95.44%);
 }
@@ -51,6 +53,38 @@ body {
   color: #ffbb01;
   margin-bottom: 14px;
 }
+
+
+  .hero-subtitle{
+    display: block;
+    margin: 0 auto;
+    text-shadow: 0 0 108px rgb(255 224 0);
+
+/* Clip Background Image */
+
+    background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+/* Animate Background Image */
+
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 80s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+
+  }
+
+/* Animate Background Image */
+
+@-webkit-keyframes aitf {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
 .hero-title {
   font-weight: bold;
   font-size: 50px;
@@ -78,6 +112,15 @@ body {
   font-weight: bold;
   min-width: 889;
   min-width: 81%;
+  transition: 1s;
+}
+.button:hover{
+  min-width: 90%;
+
+  box-shadow: rgb(255 224 0) 12px 4px 8px;
+  font-size: 15px;
+  color:rgb(0 0 0);
+
 }
 .hero-avatar {
   width: 389px;
@@ -464,3 +507,14 @@ a:active {
   }
 }
 /* конец кнопки звонка */
+
+a:visited{
+  color:#fff;
+}
+
+.shows div {
+	display: none;
+	width: 100px;
+	height: 100px;
+	float: left;
+}
