@@ -280,6 +280,11 @@ a:active {
   }
 }
 @media (max-width: 800px) {
+  .ch13-popup-sticky-bar.svelte-gg6s9j .ch13-popup-sticky-bar-content.svelte-gg6s9j {
+    display: none;
+}
+  
+  
   .container{
     padding: 0 34px;
   } 
