@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/Calback.css">
   <link rel="stylesheet" href="css/hero-subtitle.css">
+  <link rel="stylesheet" href="css/Gallery.css">
+  <link rel="stylesheet" href="css/testimons.css">
 </head>
 
 <a href="tel:+380987370415"><div class="callback-bt">
@@ -24,13 +26,11 @@
         <div class="hero-header">
           <img src="img/logo.svg" alt="It comp" class="logo" />
           <div class="social-links">
-            <a href="https://xscode.com/" class="social-link"><img src="img/social/images-removebg-preview.png"
+            <a href="https://github.com/Denys21ak" class="social-link"><img src="img/social/images-removebg-preview.png"
                 alt="github" /></a>
-            <a href="https://instagram.com/" class="social-link"><img src="img/social/640px-Instagram_icon.png"
+            <a href="https://www.instagram.com/_denis0707/" class="social-link"><img src="img/social/640px-Instagram_icon.png"
                 alt="instagram" /></a>
-            <a href="https://facebook.com/" class="social-link"><img src="img/social/Facebook_f_logo_(2019).svg.png"
-                alt="facebook" /></a>
-            <a href="https://web.telegram.org/" class="social-link"><img
+            <a href="https://t.me/Denis22710" class="social-link"><img
                 src="img/social/207-2077417_telegram-logo-png-.png" alt="telegram" /></a>
           </div>
         </div>
@@ -109,9 +109,108 @@
     </main>
 
 
+
+    <div style="text-align:center">
+      <h2 class="section-title" style="margin-top: 40px;margin-bottom: 37px;">Портфоліо робіт</h2>
+      <p>Клікніть на фото та перегляньте роботи</p>
+    </div>
+    
+    <!-- The four columns -->
+    <div class="row container">
+      <div class="column">
+        <img src="img/1.png" alt="" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="img/4.png" alt="" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="img/3.png" alt="" style="width:100%" onclick="myFunction(this);">
+        <img src="img/5.png" alt="" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="img/2.png" alt="" style="width:100%" onclick="myFunction(this);">
+        <img src="img/6.png" alt="" style="width:100%" onclick="myFunction(this);">
+      </div>
+    </div>
+    
+    <div class="container1 container">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">×</span>
+      <img id="expandedImg" style="width:100%">
+      <div id="imgtext"></div>
+    </div>
+    <script>
+      function myFunction(imgs) {
+          var expandImg = document.getElementById("expandedImg");
+          var imgText = document.getElementById("imgtext");
+          expandImg.src = imgs.src;
+          imgText.innerHTML = imgs.alt;
+          expandImg.parentElement.style.display = "block";
+      }
+      </script>
+
+
+
+
+<div class="koguvcavis-varazdel">
+  <div class="sestim-donials">
+    <h2 class="section-title" style="margin-top: 40px;margin-bottom: 37px; color:white;">Відгуки</h2>
+  <div class="sectionesag"></div>
+  <div class="sagestim-lonials">
+  <div class="vemotau-vokusipol">
+  <div class="testimonial">
+  <img src="img/avatar12-jpg.jpg" alt="">
+  <div class="gecedanam">Антон Попов</div>
+  <div class="apogered-gselected">
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  </div>
+
+  <p>Денис якісно та вчасно виконує всі поставлені задачі по сайту. Якщо вам потрібно якісно, та доступно сміло рекомендую саме його.</p>
+  </div>
+  </div>
+
+  <div class="vemotau-vokusipol">
+  <div class="testimonial">
+  <img src="img/jur18.jpg" alt="">
+  <div class="gecedanam">Дмитро Атрохов</div>
+  <div class="apogered-gselected">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+  </div>
+
+  <p>Дуже якісне та вчасне виконання замовлення на розробку сайта для фірми, за адекватною ціною. Рекомендую.</p>
+  </div>
+  </div>
+
+  <div class="vemotau-vokusipol">
+  <div class="testimonial">
+  <img src="img/avatar11-jpg.jpg" alt="">
+  <div class="gecedanam">Ігор Волков</div>
+  <div class="apogered-gselected">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+  </div>
+
+  <p>Недороге але ефективне просування сайту. Хоч тематика мого сайту високо конкурентна, сайт в ТОПі. Добра робота</p>
+  </div>
+  </div>
+  </div>
+
+
+
+
     <footer class="section container">
       <div class="container">
-        <h2 class="section-title">Зв'яжіться зі мною</h2>
+        <h2 class="section-title" style="color:white;">Зв'яжіться зі мною</h2>
         <div class="contacts-block">
           <form action="submit.php" method="POST" class="contacts-form">
             <h4 class="form-title">Можете просто залишити заявку, я зателефоную вам сьогодні</h4>
@@ -133,21 +232,21 @@
                 <h4 class="contacts-title">Соц мережі</h4>
               </div>
             </div>
-            <div class="social-links">
-              <a href="https://xscode.com/" class="social-link"><img src="img/social/images-removebg-preview.png"
+            <div class="social-links" style="text-align: left;">
+              <a href="https://github.com/Denys21ak" class="social-link"><img src="img/social/images-removebg-preview.png"
                   alt="github" /></a>
-              <a href="https://instagram.com/" class="social-link"><img src="img/social/640px-Instagram_icon.png"
+              <a href="https://www.instagram.com/_denis0707/" class="social-link"><img src="img/social/640px-Instagram_icon.png"
                   alt="instagram" /></a>
-              <a href="https://facebook.com/" class="social-link"><img src="img/social/Facebook_f_logo_(2019).svg.png"
-                  alt="facebook" /></a>
-              <a href="https://web.telegram.org/" class="social-link"><img
+              <a href="https://t.me/Denis22710" class="social-link"><img
                   src="img/social/207-2077417_telegram-logo-png-.png" alt="telegram" /></a>
             </div>
             <a href="https://tiacher.org.ua/mod/assign/view.php?id=4081" class="a">Політика конфіденційності</a>
           </div>
         </div>
       </div>
+      
     </footer>
+    
           <!-- /.social-links    <h3 id="bt1">Hello</h3>
     <div>
       <form name="publish">
