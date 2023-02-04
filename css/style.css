@@ -245,7 +245,7 @@ body {
 .contacts-data {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 42px;
+  margin-bottom: 0px;
   text-align: left;
 }
 .contacts-phone,
@@ -263,6 +263,8 @@ body {
 .contacts-text {
   margin-left: 40px;
   flex-basis: 50%;
+  text-align: left;
+  margin-top: -110px;
 }
 .contacts-link {
   text-decoration: none;
@@ -310,7 +312,7 @@ body {
     text-align: center;
   }
   .contacts-text{
-    margin-top: 42px;
+    margin-top: 0px;
     flex-basis: 100%;
     margin-left: -18px;
   }
@@ -339,3 +341,6 @@ body {
 }
 }
 
+.xpWfed, .T2dutf {
+  display: none;
+}

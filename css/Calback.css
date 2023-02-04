@@ -13,7 +13,7 @@
 	text-align: center;
 	position: fixed;
 	right: 8%;
-	bottom: 18%;
+	bottom: 14%;
 	z-index: 999;
 	transition: .3s ease-in-out;
 	-webkit-animation: hoverWave linear 1s infinite;
