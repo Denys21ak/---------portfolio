@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .row{
 	/* background-image: url(/img/free-smoke-overlays-for-photoshop-71609342370.jpg);
 	background-repeat: no-repeat;
@@ -60,67 +59,4 @@
 		right: 38px;
 		padding: 0 9px;
   }
-=======
-.row{
-	/* background-image: url(/img/free-smoke-overlays-for-photoshop-71609342370.jpg);
-	background-repeat: no-repeat;
-	background-size: 100%; */
-}
-
-.column {
-	float: left;
-	width: 25%;
-	padding: 10px;
-}
-
-/* Style the images inside the grid */
-.column img {
-	opacity: 0.8; 
-	cursor: pointer; 
-}
-
-.column img:hover {
-	opacity: 1;
-}
-
-/* Clear floats after the columns */
-.row:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
-/* The expanding image container */
-.container1 {
-	position: relative;
-	display: none;
-}
-
-/* Expanding image text */
-#imgtext {
-	position: absolute;
-	bottom: 15px;
-	left: 15px;
-	color: white;
-	font-size: 20px;
-}
-
-/* Closable button inside the expanded image */
-.closebtn {
-	position: absolute;
-	top: 10px;
-	right: 15px;
-	color: #ffffff;
-	font-size: 35px;
-	cursor: pointer;
-	background-color: #840000;
-	padding: 0 9px;
-}
-
-@media(max-width:800px){
-	.closebtn {
-		right: 38px;
-		padding: 0 9px;
-  }
->>>>>>> 9477b7988e891a2407136b67f96aab34c18ab718
 }
